@@ -106,7 +106,7 @@ padding: var(--spacing-36);
 }
 
 .navbar__logo {
-
+max-width: 300px;
 }
 
 .navbar__menu {
@@ -120,10 +120,6 @@ padding: var(--spacing-36);
     padding: var(--sapacing-8) var(--spacing-16);
     display: inline-block;
     transition: background .3s ease-in-out;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    -ms-transition: background .3s ease-in-out;
-    -o-transition: background .3s ease-in-out;
     position: relative;
 }
 
@@ -153,10 +149,6 @@ padding: var(--spacing-36);
     padding: var(--sapacing-8) var(--spacing-16);
     font-size: var(--font-medium);
     transition: background .3s ease-in-out;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    -ms-transition: background .3s ease-in-out;
-    -o-transition: background .3s ease-in-out;
 }
 
     .submenu__link:hover {
