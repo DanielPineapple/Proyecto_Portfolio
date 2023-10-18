@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | FunkoShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="css\index.css">
 </head>
 <body>
@@ -50,7 +52,7 @@
             <a class="hero__link" href="./pages/shop.html">SHOP</a>
         </article>
     </section>
-    <main class="main-container">
+        <main class="main-container">
         <section class="collection container">
             <article class="collection__content">
                 <h3 class="collection__title">Star Wars & The Mandalorian</h3>
@@ -76,15 +78,16 @@
             <h3 class="collection__title">HARRY POTTER</h3>
             <p class="collection__text">Revive los recuerdos de una saga llena de magia y encanto.</p>
             <a class="collection__link" href="./pages/shop">VER COLECCIÓN</a>
-            </aticle>
+            </article>
             <picture class="collection__cover">
                 <img src="./img/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable Funko del Patronus de Snape en la película de Harry Potter">
             </picture>
         </section>
-        <section class="slider container">
+        <section class="slider container glide">
             <h2 class="slider__title">Últimos lanzamientos</h2>
-            <ul class="slider__items">
-                <li class="slider__item">
+            <div class="glide track" data-glide-el="track">
+                <ul class="slider__items glide__slides">
+                    <li class="slider__item glide__slide">
                     <article class="card-item">
                         <a class="card-item__link" href="">
                             <picture class="card-item__cover">
@@ -100,8 +103,8 @@
                             </div>
                         </a>
                     </article>
-                </li>
-                <li class="slider__item">
+                    </li>
+                    <li class="slider__item glide__slide">
                     <article class="card-item">
                         <a class="card-item__link" href="">
                             <picture class="card-item__cover">
@@ -117,8 +120,8 @@
                             </div>
                         </a>
                     </article>
-                </li>
-                <li class="slider__item">
+                    </li>
+                    <li class="slider__item glide__slide">
                     <article class="card-item">
                         <a class="card-item__link" href="">
                             <picture class="card-item__cover">
@@ -134,8 +137,13 @@
                             </div>
                         </a>
                     </article>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="tabler:chevron-left"></iconify-icon></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="tabler:chevron-right"></iconify-icon></button>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -155,11 +163,30 @@
                     </li>
                 </ul>
                 <picture>
+                    <a href="./index.html">
                     <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+                    </a>
                 </picture>
             </nav>
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide' , {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            gap: 30,
+            breakpoint: {
+                991: {
+                    perView: 2
+                },
+                768: {
+                    perView: 1
+                }
+            }
+        }).mount();
+    </script>
 </body>
 </html>

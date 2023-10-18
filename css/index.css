@@ -77,7 +77,7 @@ footer {
 ul, ol {
     list-style-type: none;
 }
-g
+
 p {
     font-size: 1.8em;
 }
@@ -231,7 +231,7 @@ max-width: 300px;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-24);
-    align-items: start;
+    align-items:start;
 }
 
 .collection__title {
@@ -278,13 +278,22 @@ max-width: 300px;
     text-transform: uppercase;
 }
 
-.slider__items {
-    display: flex;
-    gap: var(--spacing-24);
+iconify-icon {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+.glide__arrow--left {
+    left: 0;
+}
+
+.glide__arrow--right {
+    right: 0;
 }
 
 .card-item__cover {
-    display: flex;
+    display:flex;
     position: relative;
 }
 
