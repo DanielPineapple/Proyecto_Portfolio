@@ -231,6 +231,7 @@ display: block;
 }
 
 .collection__link {
+    display: inline-block;
     background-color: var(--primary-solid);
     border-radius: 6px;
     flex-shrink: 0;
