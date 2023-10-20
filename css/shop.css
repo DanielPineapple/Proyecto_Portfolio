@@ -113,7 +113,7 @@ max-width: 300px;
 }
 
 .navbar__menu {
-    display: flex;
+    display:flex;
     align-items: center;
     gap: var(--spacing-20);
 }
@@ -174,8 +174,6 @@ max-width: 300px;
         justify-content: center;
 
     }
-    
-    /*---Collection---*/
 
     .grid-aside {
         display: grid;
@@ -189,9 +187,13 @@ max-width: 300px;
     .colum-grid2 {
         grid-column: 2/3;       
     }
+
+    /*---Collection---*/
+
     .inside-grid{
         display: grid;
         grid-template-rows: repeat(3, 1fr);
+        overflow: hidden;
     }
     .inside-grid1{
         grid-row: 1/1;
@@ -203,13 +205,6 @@ max-width: 300px;
         grid-row: 3/3;
     }
 
-/* .slider {
-        display: grid;
-        gap: 1rem;
-        grid-auto-rows: 60rem;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    }
- */
     .slider__items {
         display: flex;
         gap: var(--spacing-12);
