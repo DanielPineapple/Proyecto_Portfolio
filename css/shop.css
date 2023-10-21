@@ -161,6 +161,22 @@ max-width: 300px;
 
     /*--- Aside---*/
 
+    .grid-aside {
+        display: grid;
+        grid-template-columns: repeat(minmax(25rem,1fr));
+        overflow: hidden;
+
+    }
+
+    .colum-grid {
+        grid-column: 1 / 2;
+    }
+
+    .colum-grid2 {
+        grid-column: 2/3; 
+        overflow: inherit;
+    }
+
     .container-aside {
         display: flex;
         flex-direction:column;
@@ -174,20 +190,6 @@ max-width: 300px;
         padding-left: 10px;
         justify-content: center;
 
-    }
-
-    .grid-aside {
-        display: grid;
-        grid-template-columns: repeat(minmax(25rem,1fr));
-    }
-
-    .colum-grid {
-        grid-column: 1 / 2;
-    }
-
-    .colum-grid2 {
-        grid-column: 2/3; 
-        overflow: inherit;
     }
 
     /*---Collection---*/
