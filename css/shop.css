@@ -164,12 +164,14 @@ max-width: 300px;
     .grid-aside {
         display: grid;
         grid-template-columns: repeat(minmax(25rem,1fr));
-        overflow: hidden;
+        overflow: auto;
 
     }
 
     .colum-grid {
+        display: flex;
         grid-column: 1 / 2;
+
     }
 
     .colum-grid2 {
@@ -180,7 +182,7 @@ max-width: 300px;
     .container-aside {
         display: flex;
         flex-direction:column;
-        width: 200px;
+        width: 100px;
         overflow: hidden;
 
     }
