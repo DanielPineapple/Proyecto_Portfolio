@@ -182,7 +182,7 @@ max-width: 300px;
     .container-aside {
         display: flex;
         flex-direction:column;
-        width: 100px;
+        width: 200px;
         overflow: hidden;
 
     }
