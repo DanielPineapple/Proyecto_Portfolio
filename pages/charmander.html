@@ -14,7 +14,7 @@
         <nav class="navbar">
             <picture class="navbar__logo">
             <a href="../index.html">
-                <img src="../img\branding\logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+                <img src="/img\branding\logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
             </a>
             </picture>
             <ul class="navbar__menu">
@@ -33,10 +33,11 @@
                     </ul>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
+                    <a class="navbar__link" href="/pages/contacto.html">CONTACTO</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../pages/nosotros.html">NOSOTROS</a>
+                    <a class="navbar__link" href="/pages/nosotros.html">NOSOTROS</a>
+                </a>
                 </li>
             </ul>
         </nav>
@@ -45,24 +46,27 @@
             <a onclick="closeNav()" href="" class="close">&times;</a>
         <div class="overlay-content">
             <ul class="navb__menu2">
+                <a class="navb__menu2" href="/pages/contacto.html">CONTACTO</a>
+                <a class="navb__menu2" href="/pages/nosotros.html">NOSOTROS</a>
                 <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="../pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <a class="navb__menu2 with-icon" href="/pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
                     <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="/pages/pokemon.html" class="submenu__link">Pokemon</a>
+                        <li class="submenu__item2">
+                            <a href="/pages/pokemon.html" class="submenu__link2">Pokemon</a>
                         </li>
-                        <li class="submenu__item">
-                            <a href="/pages/harrypotter.html" class="submenu__link">Harry Potter</a>
+                        <li class="submenu__item2">
+                            <a href="/pages/harrypotter.html" class="submenu__link2">Harry Potter</a>
                         </li>
-                        <li class="submenu__item">
-                            <a href="/pages/starwars.html" class="submenu__link">Star Wars</a>
+                        <li class="submenu__item2">
+                            <a href="/pages/starwars.html" class="submenu__link2">Star Wars</a>
                         </li>
                     </ul>
-                    <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
-                    <a class="navbar__link" href="../pages/nosotros.html">NOSOTROS</a>
+                    </li>
+            </ul>
         </div>
         </div>
-    </header> <!-- Fin Header -->
+    </header>
+    <!-- Fin Header -->
     <section class="grid__container"><!--Collection items-->
         <article class="collection__item">
             <p class="collection__lic">POKEMON</p>
@@ -158,7 +162,7 @@
 </footer>  
 <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-<script src="/js/item.js"></script>
+<script src="../js/item.js"></script>
 <script>
     new Glide('.glide' , {
         type: 'carousel',
