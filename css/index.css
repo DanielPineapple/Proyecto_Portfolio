@@ -106,7 +106,18 @@ padding: var(--spacing-36);
 }
 
 .navbar__logo {
-max-width: 300px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navbar__logo img {
+    height: 70px;
+    max-width: 300px;
+    transition: all 0.3s;
+}
+
+.navbar__logo img:hover{
+    transform: scale(1.1);
 }
 
 .navbar__menu {

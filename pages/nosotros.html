@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros | FunkoShop</title>
     <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 <body>
-    <header>  <!-- Inicio Header-->
+    <header class="header">  <!-- Inicio Header-->
         <nav class="navbar">
             <picture class="navbar__logo">
             <a href="../index.html">
@@ -37,6 +38,28 @@
                 </li>
             </ul>
         </nav>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+            <ul class="navb__menu2">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="/pages/pokemon.html" class="submenu__link">Pokemon</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="/pages/harrypotter.html" class="submenu__link">Harry Potter</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="/pages/starwars.html" class="submenu__link">Star Wars</a>
+                        </li>
+                    </ul>
+                    <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
+                    <a class="navbar__link" href="../pages/nosotros.html">NOSOTROS</a>
+        </div>
+        </div>
     </header>
     <!-- Fin Header -->
     <section class="hero">
@@ -63,5 +86,6 @@
         </nav>
     <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
 </footer>
+<script type="text/javascript" src="../nav.js"></script>
 </body>
 </html>

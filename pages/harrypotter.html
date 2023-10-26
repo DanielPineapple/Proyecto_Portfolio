@@ -5,45 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry-Potter | FunkoShop</title>
     <link rel="stylesheet" href="../css/harrypotter.css">
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 <body>
-    <header>
-        <!-- Inicio Header-->
-        <nav class="navbar">
-          <picture class="navbar__logo">
-            <a href="../index.html">
-              <img
-                src="../img\branding\logo_light_horizontal.svg"
-                alt="Isologotipo de la Marca Funkoshop"
-              />
-            </a>
-          </picture>
-          <ul class="navbar__menu">
+  <header class="header">  <!-- Inicio Header-->
+    <nav class="navbar">
+        <picture class="navbar__logo">
+        <a href="../index.html">
+            <img src="../img\branding\logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+        </a>
+        </picture>
+        <ul class="navbar__menu">
             <li class="navbar__item with-submenu">
-              <a class="navbar__link with-icon" href="../pages/shop.html"
-                >SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon
-              ></a>
-              <ul class="submenu">
-                <li class="submenu__item">
-                  <a href="/pages/pokemon.html" class="submenu__link">Pokemon</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="/pages/starwars.html" class="submenu__link">Star Wars</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="/pages/harrypotter.html" class="submenu__link">Harry Potter</a>
-                </li>
-              </ul>
+                <a class="navbar__link with-icon" href="../pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <a href="/pages/pokemon.html" class="submenu__link">Pokemon</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="/pages/harrypotter.html" class="submenu__link">Harry Potter</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="/pages/starwars.html" class="submenu__link">Star Wars</a>
+                    </li>
+                </ul>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
+                <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
             </li>
             <li class="navbar__item">
                 <a class="navbar__link" href="../pages/nosotros.html">NOSOTROS</a>
             </li>
-          </ul>
-        </nav>
-      </header>
+        </ul>
+    </nav>
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+    <div id="mobile-menu" class="overlay">
+        <a onclick="closeNav()" href="" class="close">&times;</a>
+    <div class="overlay-content">
+        <ul class="navb__menu2">
+            <li class="navbar__item with-submenu">
+                <a class="navbar__link with-icon" href="../pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <a href="/pages/pokemon.html" class="submenu__link">Pokemon</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="/pages/harrypotter.html" class="submenu__link">Harry Potter</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="/pages/starwars.html" class="submenu__link">Star Wars</a>
+                    </li>
+                </ul>
+                <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
+                <a class="navbar__link" href="../pages/nosotros.html">NOSOTROS</a>
+    </div>
+    </div>
+</header>
       <section class="slider container">
         <div class="glide track">
           <ul class="slider__items">
@@ -146,5 +163,6 @@
         </nav>
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
       </footer>
+      <script type="text/javascript" src="../nav.js"></script>
 </body>
 </html>

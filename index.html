@@ -7,38 +7,66 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-    <header>  <!-- Inicio Header-->
+    <header class="header">  <!-- Inicio Header-->
         <nav class="navbar">
             <picture class="navbar__logo">
-            <a href="./index.html">
-                <img src="img\branding\logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+            <a href="../index.html">
+                <img src="../img\branding\logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
             </a>
             </picture>
             <ul class="navbar__menu">
                 <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <a class="navbar__link with-icon" href="../pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
                     <ul class="submenu">
                         <li class="submenu__item">
-                            <a href="/pages/pokemon.html" class="submenu__link">POKEMON</a>
+                            <a href="/pages/pokemon.html" class="submenu__link">Pokemon</a>
                         </li>
                         <li class="submenu__item">
-                            <a href="/pages/harrypotter.html" class="submenu__link">HARRY POTTER</a>
+                            <a href="/pages/harrypotter.html" class="submenu__link">Harry Potter</a>
                         </li>
                         <li class="submenu__item">
-                            <a href="/pages/starwars.html" class="submenu__link">STAR WARS</a>
+                            <a href="/pages/starwars.html" class="submenu__link">Star Wars</a>
                         </li>
                     </ul>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/contacto.html">CONTACTO</a>
+                    <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="./pages/nosotros.html">NOSOTROS</a>
+                    <a class="navbar__link" href="../pages/nosotros.html">NOSOTROS</a>
+                </a>
                 </li>
             </ul>
         </nav>
+
+
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+            <ul class="navb__menu2">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="/pages/pokemon.html" class="submenu__link">Pokemon</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="/pages/harrypotter.html" class="submenu__link">Harry Potter</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="/pages/starwars.html" class="submenu__link">Star Wars</a>
+                        </li>
+                    </ul>
+                    <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
+                    <a class="navbar__link" href="../pages/nosotros.html">NOSOTROS</a>
+        </div>
+        </div>
+
+
     </header>
     <!-- Fin Header -->
     <section class="hero">
@@ -78,10 +106,12 @@
             <article class="collection__content">
             <h3 class="collection__title">HARRY POTTER</h3>
             <p class="collection__text">Revive los recuerdos de una saga llena de magia y encanto.</p>
-            <a class="collection__link" href="./pages/shop">VER COLECCIÓN</a>
+            <a class="collection__link" href="/pages/patronus.html">VER COLECCIÓN</a>
             </article>
             <picture class="collection__cover">
+                <a href="/pages/patronus.html">
                 <img src="./img/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable Funko del Patronus de Snape en la película de Harry Potter">
+            </a>
             </picture>
         </section>
         <section class="slider container glide">
@@ -183,5 +213,6 @@
             }
         }).mount();
     </script>
+    <script type="text/javascript" src="nav.js"></script>
 </body>
 </html>

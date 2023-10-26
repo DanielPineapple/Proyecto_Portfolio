@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="../css/item.css">
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 <body>
-    <header>  <!-- Inicio Header-->
+    <header class="header">  <!-- Inicio Header-->
         <nav class="navbar">
             <picture class="navbar__logo">
             <a href="../index.html">
@@ -39,6 +40,28 @@
                 </li>
             </ul>
         </nav>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+            <ul class="navb__menu2">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="/pages/pokemon.html" class="submenu__link">Pokemon</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="/pages/harrypotter.html" class="submenu__link">Harry Potter</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="/pages/starwars.html" class="submenu__link">Star Wars</a>
+                        </li>
+                    </ul>
+                    <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
+                    <a class="navbar__link" href="../pages/nosotros.html">NOSOTROS</a>
+        </div>
+        </div>
     </header> <!-- Fin Header -->
     <section class="grid__container"><!--Collection items-->
         <article class="collection__item">
@@ -152,5 +175,6 @@
         }
     }).mount();
 </script>
+<script type="text/javascript" src="../nav.js"></script>
 </body>
 </html>
