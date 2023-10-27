@@ -171,6 +171,7 @@ padding: var(--spacing-36);
         flex-direction: column;
         gap: var(--spacing-36);
         margin: var(--spacing-68) auto;
+        overflow: auto;
     }
 
     .slider__items {

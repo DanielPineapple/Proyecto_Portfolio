@@ -210,19 +210,25 @@ padding: var(--spacing-36);
     }
 
     .social__media {
-        width:40%;
-        max-width:1000px;
-        padding:5px 5px;
-        margin:auto;
+        display: flex;
+        width: auto;
+        height:auto;
+        justify-content: center;
     }
 
-    .social{
+    .social {
+        width: 700px;
         display: flex;
         flex-direction: row;
-        width:200px;
-        position:relative;
-        padding: var(--spacing-128);
+        justify-content: center;
+
     }
+
+    .social__icon {
+        padding-inline: var(--spacing-36);    
+        min-inline-size: 25px;
+    }
+
 
    /* FOOTER */
 

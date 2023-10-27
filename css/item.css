@@ -174,12 +174,14 @@ padding: var(--spacing-36);
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding: var(--spacing-8) 0;
+    overflow: auto;
 }
 
 .collection__picture {
     order: -1;
     display: flex;
     position: relative;
+    min-width: 250PX;
 }
 
 .collection__picture img {
