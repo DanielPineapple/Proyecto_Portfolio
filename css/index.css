@@ -320,7 +320,8 @@ iconify-icon {
 }
 
 .card-item__cover img {
-    animation: fade .7s;
+    animation: fade 1s;
+    -webkit-animation: fade 1s;
 }
 
 .card-item__img--back {
